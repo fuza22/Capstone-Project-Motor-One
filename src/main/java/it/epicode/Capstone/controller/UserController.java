@@ -123,7 +123,7 @@ public class UserController {
         }
     }
 
-    @PostMapping("/{userId}/favorite/constructors/{driverId}")
+    @PostMapping("/{userId}/favorite/constructors/{constructorId}")
     public ResponseEntity<User> addConstructorToFavorites(@PathVariable int userId, @PathVariable int constructorId) {
         try {
             User updatedUser = userService.addConstructorsToFavorites(userId, constructorId);
@@ -133,7 +133,7 @@ public class UserController {
         }
     }
 
-    @DeleteMapping("/{userId}/favorite/constructors/{driverId}")
+    @DeleteMapping("/{userId}/favorite/constructors/{constructorId}")
     public ResponseEntity<User> removeConstructorFromFavorites(@PathVariable int userId, @PathVariable int constructorId) {
         try {
             User updatedUser = userService.removeConstructorsFromFavorites(userId, constructorId);
@@ -143,7 +143,7 @@ public class UserController {
         }
     }
 
-    @PostMapping("/{userId}/favorite/circuits/{driverId}")
+    @PostMapping("/{userId}/favorite/circuits/{circuitId}")
     public ResponseEntity<User> addCircuitToFavorites(@PathVariable int userId, @PathVariable int circuitId) {
         try {
             User updatedUser = userService.addCircuitsToFavorites(userId, circuitId);
@@ -153,7 +153,7 @@ public class UserController {
         }
     }
 
-    @DeleteMapping("/{userId}/favorite/circuits/{driverId}")
+    @DeleteMapping("/{userId}/favorite/circuits/{circuitId}")
     public ResponseEntity<User> removeCircuitFromFavorites(@PathVariable int userId, @PathVariable int circuitId) {
         try {
             User updatedUser = userService.removeCircuitsFromFavorites(userId, circuitId);

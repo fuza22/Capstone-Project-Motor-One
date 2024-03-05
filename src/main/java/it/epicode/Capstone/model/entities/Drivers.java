@@ -10,9 +10,9 @@ import java.time.LocalDate;
 @Data
 public class Drivers {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String id;
     @Column(name = "permanent_number")
     private int permanentNumber;
     @Column(name = "given_name")
